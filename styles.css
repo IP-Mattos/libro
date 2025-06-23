@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'VT323', monospace;
+  background-color: #0b0c10;
+  color: #f1f1f1;
+}
+
+h1,
+h2 {
+  font-size: 2rem;
+  color: #fffb00;
+  text-align: center;
+}
+
+.header-img {
+  width: 100%;
+  display: block;
+}
+
+.header-text {
+  text-align: center;
+  padding: 2rem;
+  background-color: #0b0c10;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.chapter-card {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  background-color: #111111;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.chapter-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.chapter-card p {
+  padding: 1rem 0.2rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  background-color: #0b0c10;
+}
+
+.modern-landing {
+  background-color: #0b0c10;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modern-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 900px;
+}
+
+.modern-header-img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.modern-title-box {
+  text-align: center;
+}
+
+.modern-title-box h1 {
+  font-family: 'VT323', monospace;
+  font-size: 3rem;
+  color: #ffee58;
+}
+
+.modern-title-box p {
+  font-family: 'VT323', monospace;
+  font-size: 1.5rem;
+  color: #f1f1f1;
+}
+
+@media screen and (max-width: 768px) {
+  .modern-header-content {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .modern-header-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .modern-title-box h1 {
+    font-size: 2.2rem;
+  }
+
+  .modern-title-box p {
+    font-size: 1.2rem;
+  }
+
+  .chapter-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .chapter-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .chapter-card p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modern-title-box h1 {
+    font-size: 1.8rem;
+  }
+
+  .modern-title-box p {
+    font-size: 1rem;
+  }
+
+  .chapter-card p {
+    font-size: 1rem;
+  }
+}
